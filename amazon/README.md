@@ -21,3 +21,11 @@ ng s products-app
 ![alt text](image-2.png)
 
 
+npm install --save-dev concurrently
+
+to run all apps at once use this command in package.json file
+"serve-all": "concurrently \"ng serve host-app\" \"ng serve carts-app\" \"ng serve products-app\""
+then run npm run serve-all
+
+"build-all": "concurrently \"npm run build:host-app\" \"npm run build:carts-app\" \"npm run build:products-app\""
+
